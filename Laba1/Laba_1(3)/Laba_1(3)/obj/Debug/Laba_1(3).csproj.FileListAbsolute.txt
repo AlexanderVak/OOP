@@ -1,7 +1,0 @@
-E:\Саша\Лабараторні\Програмування\OOП\Laba_1(3)\Laba_1(3)\bin\Debug\Laba_1(3).exe.config
-E:\Саша\Лабараторні\Програмування\OOП\Laba_1(3)\Laba_1(3)\bin\Debug\Laba_1(3).exe
-E:\Саша\Лабараторні\Програмування\OOП\Laba_1(3)\Laba_1(3)\bin\Debug\Laba_1(3).pdb
-E:\Саша\Лабараторні\Програмування\OOП\Laba_1(3)\Laba_1(3)\obj\Debug\Laba_1(3).csprojAssemblyReference.cache
-E:\Саша\Лабараторні\Програмування\OOП\Laba_1(3)\Laba_1(3)\obj\Debug\Laba_1(3).csproj.CoreCompileInputs.cache
-E:\Саша\Лабараторні\Програмування\OOП\Laba_1(3)\Laba_1(3)\obj\Debug\Laba_1(3).exe
-E:\Саша\Лабараторні\Програмування\OOП\Laba_1(3)\Laba_1(3)\obj\Debug\Laba_1(3).pdb
