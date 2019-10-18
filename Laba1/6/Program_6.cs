@@ -25,7 +25,7 @@ namespace Laba1__6_
         {
             set
             {
-                if (step < 0)
+                if (value < 0)
                 {
                     throw new Exception(" Incorrect input! Step can't be negative. ");
                 }
@@ -44,7 +44,7 @@ namespace Laba1__6_
             int size = (int)((LastX - FirstX) / Step);
             return size + 1;
         }
-        public void Calculate()
+        public void GetFn()
         {
 
             double x = FirstX;
@@ -91,10 +91,10 @@ namespace Laba1__6_
         }
         public void GetInfo()
         {
-            Calculate();
+            GetFn();
             for (int i = 0; i < Array.Length; i++)
             {
-                Console.WriteLine(string.Join(" _ ", Array[i]));
+                Console.WriteLine(string.Join("  ", Array[i]));
             }
         }
     }
