@@ -1,0 +1,7 @@
+E:\Саша\Лабараторні\Програмування\OOП\Laba2\3\bin\Debug\3.exe.config
+E:\Саша\Лабараторні\Програмування\OOП\Laba2\3\bin\Debug\3.exe
+E:\Саша\Лабараторні\Програмування\OOП\Laba2\3\bin\Debug\3.pdb
+E:\Саша\Лабараторні\Програмування\OOП\Laba2\3\obj\Debug\3.csprojAssemblyReference.cache
+E:\Саша\Лабараторні\Програмування\OOП\Laba2\3\obj\Debug\3.csproj.CoreCompileInputs.cache
+E:\Саша\Лабараторні\Програмування\OOП\Laba2\3\obj\Debug\3.exe
+E:\Саша\Лабараторні\Програмування\OOП\Laba2\3\obj\Debug\3.pdb
