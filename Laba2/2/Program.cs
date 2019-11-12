@@ -13,101 +13,74 @@ namespace ConsoleApplication5
         public Group(int[] gr_arr)
         {
             Group_arr = gr_arr;
-            int gr_num = 0;
-            int fr_gr = Group_arr[0];
-            int sec_gr = Group_arr[1];
-            int third_gr = Group_arr[2];
+
+
+
             int length = Group_arr.Length;
 
-            Student stud1_g1 = new Student("Petro", "10-A", 4);
-            Student stud2_g1 = new Student("Olena", "10-A", 5);
-            Student stud3_g1 = new Student("Dima", "10-A", 3);
-            Student stud4_g1 = new Student("Kate", "10-A", 4);
+            GoodStudent g_stud1_gr1 = new GoodStudent("Petro", "10-A", 4);
+            ExcelentStudent e_stud2_gr1 = new ExcelentStudent("Olena", "10-A", 5);
+            BadStudent b_stud3_gr1 = new BadStudent("Dima", "10-A", 3);
+            GoodStudent g_stud4_gr1 = new GoodStudent("Kate", "10-A", 4);
 
-            Student stud1_g2 = new Student("Vika", "10-B", 5);
-            Student stud2_g2 = new Student("Oleg", "10-B", 3);
-            Student stud3_g2 = new Student("Bohdan", "10-B", 3);
-            Student stud4_g2 = new Student("Kostya", "10-B", 4);
+            ExcelentStudent e_stud1_gr2 = new ExcelentStudent("Vika", "10 - B", 5);
+            BadStudent b_stud2_gr2 = new BadStudent("Oleg", "10-B", 3);
+            BadStudent b_stud3_gr2 = new BadStudent("Bohdan", "10-B", 3);
+            GoodStudent g_stud4_gr2 = new GoodStudent("Kostya", "10-B", 4);
 
-            Student stud1_g3 = new Student("Ihor", "10-C", 5);
-            Student stud2_g3 = new Student("Ivan", "10-C", 5);
-            Student stud3_g3 = new Student("Max", "10-C", 4);
-            Student stud4_g3 = new Student("Ira", "10-C", 4);
+
+            ExcelentStudent e_stud1_gr3 = new ExcelentStudent("Ihor", "10-C", 5);
+            ExcelentStudent e_stud2_gr3 = new ExcelentStudent("Ivan", "10-C", 5);
+            GoodStudent g_stud3_gr3 = new GoodStudent("Max", "10-C", 4);
+            GoodStudent g_stud4_gr3 = new GoodStudent("Ira", "10-C", 4);
 
             switch (length)
             {
                 case 1:
                     {
-                        if (gr_num == fr_gr)
+                        if (Group_arr[0] == 1)
                         {
-                            Console.WriteLine("Group #1");
-                            stud1_g1.Output();
-                            stud1_g1.Study();
-                            stud1_g1.Programming();
-                            stud1_g1.PlayFootball();
+                            Console.WriteLine("Group #1\n");
+                            g_stud1_gr1.Output();
+
                             Console.WriteLine();
-                            stud2_g1.Output();
-                            stud2_g1.Study();
-                            stud2_g1.Programming();
-                            stud2_g1.PlayFootball();
+                            e_stud2_gr1.Output();
+
                             Console.WriteLine();
-                            stud3_g1.Output();
-                            stud3_g1.Study();
-                            stud3_g1.Programming();
-                            stud3_g1.PlayFootball();
+                            b_stud3_gr1.Output();
+
                             Console.WriteLine();
-                            stud4_g1.Output();
-                            stud4_g1.Study();
-                            stud4_g1.Programming();
-                            stud4_g1.PlayFootball();
+                            g_stud4_gr1.Output();
 
                         }
-                        else if (gr_num == sec_gr)
+                        else if (Group_arr[0] == 2)
                         {
 
-                            Console.WriteLine("Group #2");
-                            stud1_g2.Output();
-                            stud1_g2.Study();
-                            stud1_g2.Programming();
-                            stud1_g2.PlayFootball();
+                            Console.WriteLine("Group #2\n");
+                            e_stud1_gr2.Output();
+
                             Console.WriteLine();
-                            stud2_g2.Output();
-                            stud2_g2.Study();
-                            stud2_g2.Programming();
-                            stud2_g2.PlayFootball();
+                            b_stud2_gr2.Output();
+
                             Console.WriteLine();
-                            stud3_g2.Output();
-                            stud3_g2.Study();
-                            stud3_g2.Programming();
-                            stud3_g2.PlayFootball();
+                            b_stud3_gr2.Output();
+
                             Console.WriteLine();
-                            stud4_g2.Output();
-                            stud4_g2.Study();
-                            stud4_g2.Programming();
-                            stud4_g2.PlayFootball();
+                            g_stud4_gr2.Output();
                         }
-                        else if (gr_num == third_gr)
+                        else if (Group_arr[0] == 3)
                         {
-                            Console.WriteLine("Group #3");
-                            stud1_g3.Output();
-                            stud1_g3.Study();
-                            stud1_g3.Programming();
-                            stud1_g3.PlayFootball();
+                            Console.WriteLine("Group #3\n");
+                            e_stud1_gr3.Output();
+
                             Console.WriteLine();
-                            stud2_g3.Output();
-                            stud2_g3.Study();
-                            stud2_g3.Programming();
-                            stud2_g3.PlayFootball();
+                            e_stud2_gr3.Output();
+
                             Console.WriteLine();
-                            stud3_g3.Output();
-                            stud3_g3.Study();
-                            stud3_g3.Programming();
-                            stud3_g3.PlayFootball();
+                            g_stud3_gr3.Output();
+
                             Console.WriteLine();
-                            stud4_g3.Output();
-                            stud4_g3.Study();
-                            stud4_g3.Programming();
-                            stud4_g3.PlayFootball();
+                            g_stud4_gr3.Output();
                         }
                         else
                             Console.WriteLine("Such group doesn't exist!");
@@ -115,134 +88,84 @@ namespace ConsoleApplication5
                     break;
                 case 2:
                     {
-                        if (fr_gr + sec_gr == 3)
+
+                        if (group_arr[0] + group_arr[1] == 3)
                         {
-                            Console.WriteLine("Group #1");
-                            stud1_g1.Output();
-                            stud1_g1.Study();
-                            stud1_g1.Programming();
-                            stud1_g1.PlayFootball();
+                            Console.WriteLine("Group #1\n");
+                            g_stud1_gr1.Output();
+
                             Console.WriteLine();
-                            stud2_g1.Output();
-                            stud2_g1.Study();
-                            stud2_g1.Programming();
-                            stud2_g1.PlayFootball();
+                            e_stud2_gr1.Output();
+
                             Console.WriteLine();
-                            stud3_g1.Output();
-                            stud3_g1.Study();
-                            stud3_g1.Programming();
-                            stud3_g1.PlayFootball();
+                            b_stud3_gr1.Output();
+
                             Console.WriteLine();
-                            stud4_g1.Output();
-                            stud4_g1.Study();
-                            stud4_g1.Programming();
-                            stud4_g1.PlayFootball();
-                            Console.WriteLine("Group #2");
-                            stud1_g2.Output();
-                            stud1_g2.Study();
-                            stud1_g2.Programming();
-                            stud1_g2.PlayFootball();
+                            g_stud4_gr1.Output();
+
+                            Console.WriteLine("Group #2\n");
+                            e_stud1_gr2.Output();
+
                             Console.WriteLine();
-                            stud2_g2.Output();
-                            stud2_g2.Study();
-                            stud2_g2.Programming();
-                            stud2_g2.PlayFootball();
+                            b_stud2_gr2.Output();
+
                             Console.WriteLine();
-                            stud3_g2.Output();
-                            stud3_g2.Study();
-                            stud3_g2.Programming();
-                            stud3_g2.PlayFootball();
+                            b_stud3_gr2.Output();
+
                             Console.WriteLine();
-                            stud4_g2.Output();
-                            stud4_g2.Study();
-                            stud4_g2.Programming();
-                            stud4_g2.PlayFootball();
+                            g_stud4_gr2.Output();
                         }
-                        else if (fr_gr + third_gr == 4)
+                        if (group_arr[0] + group_arr[1] == 4)
                         {
-                            Console.WriteLine("Group #1");
-                            stud1_g1.Output();
-                            stud1_g1.Study();
-                            stud1_g1.Programming();
-                            stud1_g1.PlayFootball();
+                            Console.WriteLine("Group #1\n");
+                            g_stud1_gr1.Output();
+
                             Console.WriteLine();
-                            stud2_g1.Output();
-                            stud2_g1.Study();
-                            stud2_g1.Programming();
-                            stud2_g1.PlayFootball();
+                            e_stud2_gr1.Output();
+
                             Console.WriteLine();
-                            stud3_g1.Output();
-                            stud3_g1.Study();
-                            stud3_g1.Programming();
-                            stud3_g1.PlayFootball();
+                            b_stud3_gr1.Output();
+
                             Console.WriteLine();
-                            stud4_g1.Output();
-                            stud4_g1.Study();
-                            stud4_g1.Programming();
-                            stud4_g1.PlayFootball();
-                            Console.WriteLine("Group #3");
-                            stud1_g3.Output();
-                            stud1_g3.Study();
-                            stud1_g3.Programming();
-                            stud1_g3.PlayFootball();
+                            g_stud4_gr1.Output();
+
+                            Console.WriteLine("Group #3\n");
+                            e_stud1_gr3.Output();
+
                             Console.WriteLine();
-                            stud2_g3.Output();
-                            stud2_g3.Study();
-                            stud2_g3.Programming();
-                            stud2_g3.PlayFootball();
+                            e_stud2_gr3.Output();
+
                             Console.WriteLine();
-                            stud3_g3.Output();
-                            stud3_g3.Study();
-                            stud3_g3.Programming();
-                            stud3_g3.PlayFootball();
+                            g_stud3_gr3.Output();
+
                             Console.WriteLine();
-                            stud4_g3.Output();
-                            stud4_g3.Study();
-                            stud4_g3.Programming();
-                            stud4_g3.PlayFootball();
+                            g_stud4_gr3.Output();
                         }
-                        else if (sec_gr + third_gr == 5)
+                        if (group_arr[0] + group_arr[1] == 5)
                         {
-                            Console.WriteLine("Group #2");
-                            stud1_g2.Output();
-                            stud1_g2.Study();
-                            stud1_g2.Programming();
-                            stud1_g2.PlayFootball();
+                            Console.WriteLine("Group #2\n");
+                            e_stud1_gr2.Output();
+
                             Console.WriteLine();
-                            stud2_g2.Output();
-                            stud2_g2.Study();
-                            stud2_g2.Programming();
-                            stud2_g2.PlayFootball();
+                            b_stud2_gr2.Output();
+
                             Console.WriteLine();
-                            stud3_g2.Output();
-                            stud3_g2.Study();
-                            stud3_g2.Programming();
-                            stud3_g2.PlayFootball();
+                            b_stud3_gr2.Output();
+
                             Console.WriteLine();
-                            stud4_g2.Output();
-                            stud4_g2.Study();
-                            stud4_g2.Programming();
-                            stud4_g2.PlayFootball();
-                            Console.WriteLine("Group #3");
-                            stud1_g3.Output();
-                            stud1_g3.Study();
-                            stud1_g3.Programming();
-                            stud1_g3.PlayFootball();
+                            g_stud4_gr2.Output();
+
+                            Console.WriteLine("Group #3\n");
+                            e_stud1_gr3.Output();
+
                             Console.WriteLine();
-                            stud2_g3.Output();
-                            stud2_g3.Study();
-                            stud2_g3.Programming();
-                            stud2_g3.PlayFootball();
+                            e_stud2_gr3.Output();
+
                             Console.WriteLine();
-                            stud3_g3.Output();
-                            stud3_g3.Study();
-                            stud3_g3.Programming();
-                            stud3_g3.PlayFootball();
+                            g_stud3_gr3.Output();
+
                             Console.WriteLine();
-                            stud4_g3.Output();
-                            stud4_g3.Study();
-                            stud4_g3.Programming();
-                            stud4_g3.PlayFootball();
+                            g_stud4_gr3.Output();
                         }
                         else
                             Console.WriteLine("Such group doesn't exist!");
@@ -250,66 +173,42 @@ namespace ConsoleApplication5
                     break;
                 case 3:
                     {
-                        Console.WriteLine("Group #1");
-                        stud1_g1.Output();
-                        stud1_g1.Study();
-                        stud1_g1.Programming();
-                        stud1_g1.PlayFootball();
+                        Console.WriteLine("Group #1\n");
+                        g_stud1_gr1.Output();
+
                         Console.WriteLine();
-                        stud2_g1.Output();
-                        stud2_g1.Study();
-                        stud2_g1.Programming();
-                        stud2_g1.PlayFootball();
+                        e_stud2_gr1.Output();
+
                         Console.WriteLine();
-                        stud3_g1.Output();
-                        stud3_g1.Study();
-                        stud3_g1.Programming();
-                        stud3_g1.PlayFootball();
+                        b_stud3_gr1.Output();
+
                         Console.WriteLine();
-                        stud4_g1.Output();
-                        stud4_g1.Study();
-                        stud4_g1.Programming();
-                        stud4_g1.PlayFootball();
-                        Console.WriteLine("Group #2");
-                        stud1_g2.Output();
-                        stud1_g2.Study();
-                        stud1_g2.Programming();
-                        stud1_g2.PlayFootball();
+                        g_stud4_gr1.Output();
+
+                        Console.WriteLine("Group #2\n");
+                        e_stud1_gr2.Output();
+
                         Console.WriteLine();
-                        stud2_g2.Output();
-                        stud2_g2.Study();
-                        stud2_g2.Programming();
-                        stud2_g2.PlayFootball();
+                        b_stud2_gr2.Output();
+
                         Console.WriteLine();
-                        stud3_g2.Output();
-                        stud3_g2.Study();
-                        stud3_g2.Programming();
-                        stud3_g2.PlayFootball();
+                        b_stud3_gr2.Output();
+
                         Console.WriteLine();
-                        stud4_g2.Output();
-                        stud4_g2.Study();
-                        stud4_g2.Programming();
-                        stud4_g2.PlayFootball();
-                        Console.WriteLine("Group #3");
-                        stud1_g3.Output();
-                        stud1_g3.Study();
-                        stud1_g3.Programming();
-                        stud1_g3.PlayFootball();
+                        g_stud4_gr2.Output();
+
+                        Console.WriteLine("Group #3\n");
+                        e_stud1_gr3.Output();
+
                         Console.WriteLine();
-                        stud2_g3.Output();
-                        stud2_g3.Study();
-                        stud2_g3.Programming();
-                        stud2_g3.PlayFootball();
+                        e_stud2_gr3.Output();
+
                         Console.WriteLine();
-                        stud3_g3.Output();
-                        stud3_g3.Study();
-                        stud3_g3.Programming();
-                        stud3_g3.PlayFootball();
+                        g_stud3_gr3.Output();
+
                         Console.WriteLine();
-                        stud4_g3.Output();
-                        stud4_g3.Study();
-                        stud4_g3.Programming();
-                        stud4_g3.PlayFootball();
+                        g_stud4_gr3.Output();
+
                     }
                     break;
             }
@@ -329,7 +228,9 @@ namespace ConsoleApplication5
         public void Output()
         {
             Console.WriteLine($"Student : {Name} Form {Form} Mark {Mark}");
-
+            Study();
+            Programming();
+            PlayFootball();
         }
         public Student(string name, string form, int mark)
         {
@@ -417,7 +318,7 @@ namespace ConsoleApplication5
     {
         static void Main(string[] args)
         {
-
+            Console.Write("Please, enter numbers of group : ");
             string[] str_arr = Console.ReadLine().Split();
             int[] num_arr = new int[str_arr.Length];
             for (int i = 0; i < str_arr.Length; i++)
