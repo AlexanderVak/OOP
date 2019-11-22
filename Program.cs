@@ -4,119 +4,73 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _3
+namespace laba_2._5
 {
+    class Solve
+    {
+        int n;
+        double x;
+        public int N
+        {
+            set
+            {
+                if (value < 0)
+                    Console.WriteLine("Wrong input! N must be natural number");
+                else
+                    n = value;
+            }
+            get { return n; }
+        }
+        public double X
+        {
+            get { return x; }
+            set { x = value; }
+        }
+        public Solve(int n, double x)
+        {
+            N = n; X = x;
+            double equation = 0;
+            for (int i = 1; i < N; i++)
+            {
+                equation *= -1;
+                double fnc = 0;
+                if (i % 2 == 0)
+                    fnc = Math.Cos(i * X);
+                else
+                    fnc = Math.Sin(i * X);
+
+                equation -= ((N - i) * (X - i)) / fnc;
+
+            }
+
+            Console.WriteLine("The answer is : {0}", equation);
+        }
+
+    }
+    class SolveWithRecursion:Solve
+    {
+        public SolveWithRecursion()
+           
+        {
+
+        }
+    }
     class Program
     {
-        class Vehicle
-        {
-            string price;
-            string speed;
-            string year;
-            public string Price
-            {
-                get { return price; }
-                set { price = value; }
-            }
-            public string Speed
-            {
-                get { return speed; }
-                set { speed = value; }
-            }
-            public string Year
-            {
-                get { return year; }
-                set { year = value; }
-            }
-
-            public Vehicle(string price, string speed, string year)
-            {
-                Price = price;
-                Speed = speed;
-                Year = year;
-            }
-            public virtual void Output()
-            {
-                Console.Write($"Price of the vehicle - {Price};" +
-                    $"\nSpeed of the vehicle - {Speed};" +
-                    $"\nYear of issue of the vehicle - {Year};");
-            }
-        }
-        class Plane : Vehicle
-        {
-            public int Hight { get; set; }
-            public int Passengers { get; set; }
-            public Plane(string price, string speed, string year, int hight, int passangers)
-                : base(price, speed, year)
-            {
-                Hight = hight;
-                Passengers = passangers;
-
-
-            }
-            public override void Output()
-            {
-                Console.Write($"Price of the vehicle - {Price};" +
-                    $"\nSpeed of the vehicle {Speed};" +
-                    $"\nYear of issue of the vehicle - {Year};" +
-                    $"\nHight of the flight - {Hight} feet;" +
-                    $"\nQuantity of passebgers - {Passengers};");
-
-            }
-        }
-        class Car : Vehicle
-        {
-            public Car(string price, string speed, string year)
-                : base(price, speed, year)
-            {
-                Output();
-            }
-        }
-        class Ship : Vehicle
-        {
-            public int Passengers { get; set; }
-            public string Port { get; set; }
-            public Ship(string price, string speed, string year, int passengers, string port)
-                : base(price, speed, year)
-            {
-                Passengers = passengers;
-                Port = port;
-            }
-            public override void Output()
-            {
-                Console.Write($"Price of the vehicle - {Price};" +
-                    $"\nSpeed of the vehicle - {Speed};" +
-                    $"\nYear of issue of the vehicle - {Year};" +
-                    $"\nQuantity of passebgers - {Passengers};" +
-                    $"\nHome port - {Port}");
-
-            }
-        }
         static void Main(string[] args)
         {
-            Console.WriteLine("Choose your type of transport (Plane or Car or Ship)");
-            string input = Console.ReadLine();
-            Console.WriteLine();
-            switch (input)
-            {
-                case "Plane":
-                    {
-                        Plane p = new Plane("$74 million", "470 ktas", "1996", 39000, 149);
-                        p.Output();
-                    }
-                    break;
-                case "Car":
-                    {
-                        Car c = new Car("$70.000", "80 km/h", "2012");
-                    }
-                    break;
-                case "Ship":
-                    {
-                        Ship s = new Ship("$7.5 million", "42.6 km/h", "1911", 2223, "Southampton");
-                        s.Output();
-                    }
-                    break;
-            }
+            Console.Write("Enter number n : ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter number x : ");
+            double x = Convert.ToDouble(Console.ReadLine());
+
+
+            Solve eq = new Solve(n, x);
+
+            Console.WriteLine("Lets check");
+            double check = (((3 - 1) * (1.5 - 1)) / Math.Sin(1 * 1.5)) -
+                 (((3 - 2) * (1.5 - 2)) / Math.Cos(2 * 1.5)) ;
+            Console.Write("Answer after check is " + check);
             Console.ReadKey();
         }
     }
