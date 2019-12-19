@@ -2,6 +2,5 @@ E:\Саша\Лабараторні\Програмування\OOП\Laba2\5\bin\D
 E:\Саша\Лабараторні\Програмування\OOП\Laba2\5\bin\Debug\5.exe
 E:\Саша\Лабараторні\Програмування\OOП\Laba2\5\bin\Debug\5.pdb
 E:\Саша\Лабараторні\Програмування\OOП\Laba2\5\obj\Debug\5.csprojAssemblyReference.cache
-E:\Саша\Лабараторні\Програмування\OOП\Laba2\5\obj\Debug\5.csproj.CoreCompileInputs.cache
 E:\Саша\Лабараторні\Програмування\OOП\Laba2\5\obj\Debug\5.exe
 E:\Саша\Лабараторні\Програмування\OOП\Laba2\5\obj\Debug\5.pdb
