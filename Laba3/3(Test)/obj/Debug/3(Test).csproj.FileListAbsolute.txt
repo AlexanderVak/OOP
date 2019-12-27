@@ -1,0 +1,6 @@
+E:\Саша\Лабараторні\Програмування\OOП\Laba3\3(Test)\bin\Debug\3(Test).exe.config
+E:\Саша\Лабараторні\Програмування\OOП\Laba3\3(Test)\bin\Debug\3(Test).exe
+E:\Саша\Лабараторні\Програмування\OOП\Laba3\3(Test)\bin\Debug\3(Test).pdb
+E:\Саша\Лабараторні\Програмування\OOП\Laba3\3(Test)\obj\Debug\3(Test).csprojAssemblyReference.cache
+E:\Саша\Лабараторні\Програмування\OOП\Laba3\3(Test)\obj\Debug\3(Test).exe
+E:\Саша\Лабараторні\Програмування\OOП\Laba3\3(Test)\obj\Debug\3(Test).pdb
