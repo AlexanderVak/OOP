@@ -1,0 +1,6 @@
+E:\Саша\Лабораторні\Програмування\OOП\Laba4\1\bin\Debug\1.exe.config
+E:\Саша\Лабораторні\Програмування\OOП\Laba4\1\bin\Debug\1.exe
+E:\Саша\Лабораторні\Програмування\OOП\Laba4\1\bin\Debug\1.pdb
+E:\Саша\Лабораторні\Програмування\OOП\Laba4\1\obj\Debug\1.exe
+E:\Саша\Лабораторні\Програмування\OOП\Laba4\1\obj\Debug\1.pdb
+E:\Саша\Лабораторні\Програмування\OOП\Laba4\1\obj\Debug\1.csprojAssemblyReference.cache
